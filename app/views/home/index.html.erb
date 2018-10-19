@@ -1,0 +1,90 @@
+<% provide :title, 'Home' %>
+
+<section id="presenter" class="jumbotron" style="height: 500px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled text-center" style="margin-top: 80px;">
+					<li><h1><i class='glyphicon glyphicon-search'></i><br>AgroAPP</h1></li>
+					<li><p>Soluções inteligentes para o agronegócio.</p></li>
+					<ul class="list-unstyled list-inline" style="margin-top: 30px;">
+						<li><%= link_to 'Quem Somos', '#quem-somos', class: 'btn btn-primary btn-lg top' %></li>
+						<li><%= link_to 'Soluções',   '#solucoes', class: 'btn btn-primary btn-lg top' %></li>
+						<li><%= link_to 'Contato',    '#contato', class: 'btn btn-primary btn-lg top' %></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="breadcrumb">
+					<li><%= link_to 'Home', root_path %></li>
+				</ul>
+
+				<ul class="list-unstyled text-center">
+					<li><h1><i class='glyphicon glyphicon-search'></i></h1></li>
+					<li><h2>NOSSOS VALORES</h2></li>
+					<li><p>Conheça nossos valores.</p></li>
+					<li><hr></li>
+				</ul>
+				
+				<div class="col-md-4">
+					<ul class="list-unstyled text-center">
+						<li><h1><i class='glyphicon glyphicon-search'></i></h1></li>
+						<li><h3>VISÃO</h3></li>
+						<li><p>Ser respeitada e reconhecida, como uma empresa nacional
+						pela eficiencia de nossos produtos, colaboradores e serviços
+						prestados em nosso ramo.</p></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4">
+					<ul class="list-unstyled text-center">
+						<li><h1><i class='glyphicon glyphicon-search'></i></h1></li>
+						<li><h3>PRINCÍPIOS</h3></li>
+						<li><p>Procuramos estabelecer principios duradouros com nossos clientes,
+						entre eles estão á Honestidade, Responsabilidade, Ética, Confiabilidade.</p></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4">
+					<ul class="list-unstyled text-center">
+						<li><h1><i class='glyphicon glyphicon-search'></i></h1></li>
+						<li><h3>VALORES</h3></li>
+						<li><p>Nossos valores norteiam e criam conexões alem do négocio, com
+						nossos clientes, entre eles estão a Transparencia, Comprometimento,
+						Unicidade e Pró-Atividade.</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				 <ul class="list-unstyled text-center">
+				 		<li><h1>Entre em contato conosco.</h1></li>
+				 		<li><p>Envie sua mensagem através do formulário abaixo.</p></li>
+				 		<li><hr></li>
+				 </ul>
+				
+				 <div class='col-md-5'>
+						<div class="jumbotron" style="height: 350px;">				
+						</div>
+				 </div>
+
+				 <div class="col-md-7">
+				 		<%= render partial: 'contact/form', locals: { contact: @contact } %>
+				 </div>
+			</div>
+		</div>
+	</div>
+</section>
